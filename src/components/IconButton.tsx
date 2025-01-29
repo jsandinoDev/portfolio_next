@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
-export const SocialPill = ({ href, target = "_blank", rel = "noopener noreferrer", children }) => {
+interface IconButtonProps {
+    href: string; 
+    target?: string; 
+    rel?: string; 
+    children: ReactNode; 
+  }
+
+export const IconButton = ({ href, target = "_blank", rel = "noopener noreferrer", children }: IconButtonProps) => {
     return (
         <a
             className="rounded-full border
