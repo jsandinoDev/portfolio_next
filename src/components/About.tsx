@@ -4,7 +4,8 @@ import { ProfileIcon } from "./icons/ProfileIcon";
 export const About = () => {
   return (
     <div className="py-10" id="about">
-<h1 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white border-b pb-4 border-gray-300 dark:border-gray-700">        <ProfileIcon />
+      <h1 className="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white border-b pb-4 border-gray-300 dark:border-gray-700">
+        <ProfileIcon />
         About me
       </h1>
 
@@ -12,7 +13,7 @@ export const About = () => {
         <div className="[&>p]:mb-4 [&>p>strong]:text-yellow-600 dark:[&>p>strong]:text-orange-400 [&>p>strong]:font-normal text-pretty order-2 md:order-1 text-xl">
           <p>
             My name is Josué Sandino, but in the technology community many
-            people know me as jsandinoDev. I'm a{" "}
+            people know me as jsandinoDev. I&apos;m a{" "}
             <strong>
               full-stack developer with a weakness for TypeScript && C#
             </strong>
@@ -32,12 +33,13 @@ export const About = () => {
           </p>
 
           <p>
-            When I’m not coding, you’ll find me lifting weights, playing video
-            games, or diving into the world of emerging technologies like web3.
-            I also have an obsession with music, I play guitar, saxophone, piano
-            and ukele. I love listening to classic && minimal techno music while
-            working. <strong> Open source is my playground </strong>, and I’m
-            always up for building cool, innovative things. ♭
+            When I&apos;m not coding, you&apos;ll find me lifting weights,
+            playing video games, or diving into the world of emerging
+            technologies like web3. I also have an obsession with music, I play
+            guitar, saxophone, piano and ukele. I love listening to classic &&
+            minimal techno music while working.{" "}
+            <strong> Open source is my playground </strong>, and I&apos;m always
+            up for building cool, innovative things. ♭
           </p>
 
           <p></p>

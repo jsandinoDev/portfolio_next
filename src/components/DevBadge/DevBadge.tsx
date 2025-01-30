@@ -223,7 +223,7 @@ export function DevBadge({ icon, size, children }: DevBadgeProps) {
     icon || (label.toLowerCase().replace(/ /g, "-") as DevBadgeIcon);
   const Icon = icons[iconID];
   const className = `${styles["badge-" + (size || "lg")]} flex border bg-white/5 border-white/10 `;
-  let color = colors[iconID];
+  const color = colors[iconID];
 
   return (
     <div className={className}>

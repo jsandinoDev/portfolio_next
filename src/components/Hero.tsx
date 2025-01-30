@@ -13,13 +13,15 @@ export const Hero = () => {
       <div className="flex flex-col md:flex-row items-center md:items-center md:justify-center gap-8">
         <div>
           <span>
-            <img
+            <Image
               className="rounded-full w-12 h-12 mb-5"
               src="/timekeeper.png"
               alt="Logo"
+              width="500"
+              height="500"
             />
             <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-              Hey, I'm Josue
+              Hey, I&apos;m Josue
             </h1>
           </span>
 
@@ -48,7 +50,6 @@ export const Hero = () => {
               Email
             </IconButton>
           </nav>
-
         </div>
 
         <div className="hidden md:block w-full md:w-1/2 ps-11">
@@ -59,7 +60,6 @@ export const Hero = () => {
             width="5000"
             height="5000"
           />
-          
         </div>
       </div>
 
