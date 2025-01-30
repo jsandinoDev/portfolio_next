@@ -5,35 +5,28 @@ import { LinkedInIcon } from "./icons/LinkedInIcon";
 import { MailIcon } from "./icons/MailIcon";
 import { Projects } from "./Projects";
 import Image from "next/image";
+import { About } from "./About";
 
 export const Hero = () => {
   return (
-    <div className="py-10">
+    <div className=" w-full max-w-[50vw] mx-auto" id="home">
       <div className="flex flex-col md:flex-row items-center md:items-center md:justify-center gap-8">
-        <div className="flex-1">
+        <div>
           <span>
             <img
               className="rounded-full w-12 h-12 mb-5"
-              src="https://pbs.twimg.com/profile_images/1808894397200879621/dymtRZEo_400x400.jpg"
+              src="/timekeeper.png"
               alt="Logo"
             />
             <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
               Hey, I'm Josue
-              <a
-                href="https://www.linkedin.com/in/josue-sandino-jaen-846381207/"
-                target="_blank"
-                rel="noopener"
-                className="flex justify-center items-center"
-              >
-                {/* <p>Open to Workd</p> */}
-              </a>
             </h1>
           </span>
 
           <h2 className="text-xl lg:text-2xl text-wrap max-w-[700px]">
             <span>+5 years of experience. </span>
-            <span className="text-yellow-200/90">
-              Full stack developer && Web3 open source contributor.
+            <span className="text-orange-400">
+              Full stack developer && Web3 Open Source Contributor.
             </span>
             <span className="text-blue-100/90">
               {" "}
@@ -55,22 +48,26 @@ export const Hero = () => {
               Email
             </IconButton>
           </nav>
+
         </div>
 
-        <div className="hidden md:block w-full md:w-1/2">
+        <div className="hidden md:block w-full md:w-1/2 ps-11">
           <Image
             className="rounded-2xl shadow-lg w-full object-cover"
-            src="https://scontent.fsjo14-1.fna.fbcdn.net/v/t39.30808-6/458114126_8173997962679938_3972859050933968256_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=RFrZtptR3M8Q7kNvgH8P5MX&_nc_zt=23&_nc_ht=scontent.fsjo14-1.fna&_nc_gid=AgCV0fAURVidCsI7j7LjwO2&oh=00_AYDFlXRq2qBx9ciQsDDVp34OHImMewdKDePR0ZB8_FKiIg&oe=679F61B4"
-            alt="New Image"
-            width={200}
-            height={200}
+            src="/hero.jpg"
+            alt="Hero Image"
+            width="5000"
+            height="5000"
           />
+          
         </div>
       </div>
 
       <WorkExperience />
 
       <Projects />
+
+      <About />
     </div>
   );
 };

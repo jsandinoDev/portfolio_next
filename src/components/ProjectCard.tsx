@@ -6,13 +6,13 @@ import { IconButton } from "./IconButton";
 import { BinocularsIcon } from "./icons/BinocularsIcon";
 import { GithubIcon } from "./icons/GithubIcon";
 import { OnlyDustIcon } from "./icons/OnlyDustIcon";
-import { IconMinimal } from "./IconMinimal";
+import { DevBadge } from "./DevBadge/DevBadge";
 
 interface Props {
   img: string;
   title: string;
   description: string;
-  icons: string[];
+  stack: string[];
   previewLink: boolean;
   url: string;
   urlGithub: string;
@@ -23,7 +23,7 @@ const ProjectCard = ({
   img,
   title,
   description,
-  icons,
+  stack,
   previewLink,
   url,
   urlGithub,
@@ -37,8 +37,8 @@ const ProjectCard = ({
           <Image
             alt={title}
             src={img}
-            width={500} // Set the intrinsic width of the image
-            height={300} // Set the intrinsic height of the image
+            width={500}
+            height={300}
             className="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
             loading="lazy"
           />
@@ -46,37 +46,36 @@ const ProjectCard = ({
       </div>
 
       <div className="w-full md:w-1/2 md:max-w-lg">
-        <h3 className="text-center text-xl sm:text-2xl md:text-2xl  text-gray-800 dark:text-gray-100">
+        <h3 className="text-center text-xl sm:text-2xl md:text-2xl  text-gray-800 dark:text-orange-400">
           {title}
         </h3>
         <div className="flex flex-wrap mt-2 justify-center">
-          <ul className="flex flex-row mb-2 gap-x-2">
-            {icons.map((iconName) => (
-              <li>
-                <span
-                  className={`flex gap-x-2 rounded-full text-xs py-1 px-2 `}
-                >
-                   <IconMinimal name={iconName}/>
-                </span>
-              </li>
-            ))}
+          <div>
+            {stack && (
+              <div className="flex">
+                {stack.map((s) => (
+                  <DevBadge key={s} size={"sm"}>
+                    {s}
+                  </DevBadge>
+                ))}
+              </div>
+            )}
+          </div>
 
-          </ul>
-
-          <div className="mt-2 text-gray-700 dark:text-gray-400">
+          <div className="mt-2 text-xl text-gray-700 dark:text-gray-100 font-normal">
             {description}
           </div>
           <footer className="flex items-end justify-start mt-4 gap-x-4">
             {urlGithub && (
               <IconButton href={urlGithub}>
                 <GithubIcon />
-                Github
+                Source code
               </IconButton>
             )}
             {previewLink && (
               <IconButton href={url}>
                 <BinocularsIcon />
-                Preview
+                Visit Website
               </IconButton>
             )}
             {onlyDustGithub && (

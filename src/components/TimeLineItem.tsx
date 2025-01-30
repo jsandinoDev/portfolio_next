@@ -1,5 +1,6 @@
 interface TimeLineItemProps {
   fromDate: string;
+  workplace: string;
   toDate?: string;
   title: string;
   description: string;
@@ -10,6 +11,7 @@ interface TimeLineItemProps {
 export const TimeLineItem: React.FC<TimeLineItemProps> = ({
   fromDate,
   toDate,
+  workplace,
   title,
   description,
   link,
@@ -20,35 +22,41 @@ export const TimeLineItem: React.FC<TimeLineItemProps> = ({
       <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
 
       <div className="flex items-center space-x-1">
-        <time className="text-base sm:text-lg md:text-xl font-normal leading-none text-gray-400 dark:text-gray-500">
+        <time className="text-base sm:text-lg md:text-xl font-normal leading-none text-gray-400 dark:text-orange-400">
           {fromDate}
         </time>
 
         {current ? (
           <div>
-            <span className="pe-1 text-base sm:text-lg md:text-xl font-normal leading-none text-gray-400 dark:text-gray-500">
+            <span className="pe-1 text-base sm:text-lg md:text-xl font-normal leading-none text-gray-400  dark:text-orange-400">
               -
             </span>
-            <time className="text-base sm:text-lg md:text-xl font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="text-base sm:text-lg md:text-xl font-normal leading-none text-gray-400  dark:text-orange-400">
               Current
             </time>
           </div>
         ) : (
           <div>
-            <span className="pe-1 text-base sm:text-lg md:text-xl font-normal leading-none text-gray-400 dark:text-gray-500">
+            <span className="pe-1 text-base sm:text-lg md:text-xl font-normal leading-none text-gray-400 dark:text-orange-400">
               -
             </span>
-            <time className="text-base sm:text-lg md:text-xl font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="text-base sm:text-lg md:text-xl font-normal leading-none text-gray-400  dark:text-orange-400">
               {toDate}
             </time>
           </div>
         )}
       </div>
 
-      <h3 className="text-xl sm:text-2xl md:text-2xl font-semibold text-gray-900 dark:text-white">
-        {title}
-      </h3>
-      <p className="mb-4 text-lg sm:text-xl md:text-2xl font-normal text-gray-500 dark:text-gray-400">
+      <div className="space-x-2 flex items-center">
+        <h3 className="text-xl sm:text-2xl md:text-2xl font-semibold text-gray-900 dark:text-white">
+          {title}
+        </h3>
+        <h4 className="text-xl md:text-xl font-normal text-gray-900 dark:text-orange-400">
+          |     {workplace}
+        </h4>
+      </div>
+
+      <p className="mb-4 sm:text-xl md:text-xl font-thin text-gray-500 dark:text-gray-400">
         {description}
       </p>
       <a

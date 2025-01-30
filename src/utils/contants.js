@@ -1,34 +1,36 @@
 export const PROJECTS = [
     {
-      img: "/starkcade.jpeg",
-      title: "Starkcade",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium feugiat augue sed aliquet. Nam at scelerisque lacus. In et aliquam dolor. Vivamus et est sit amet leo pharetra hendrerit. Mauris a varius erat. Phasellus tristique egestas diam eu tincidunt. Pellentesque molestie, lorem eu aliquam volutpat, risus ante porttitor libero, ac blandit metus nisl et metus",
-      icons: [
-        "NextIcon",
-        "TailwindIcon",
-        "ReactIcon"
-      ],
-      previewLink: true,
-      url: "https://convertidor-criptomonedas2022.netlify.app",
-      urlGithub: "https://github.com/JoelVR17/Conversor-de-Criptomonedas",
-      urlGithub2: "",
+        img: "/starkcade.jpg",
+        title: "Starkcade",
+        description: "An interactive and decentralized Arcade built on the Starknet. Currently working on a decentralized CoinFlip game on the Starknet blockchain. The game allows users to bet on the outcome of a coin flip, with the results being determined by a smart contract deployed on Starknet.",
+        stack: ['TypeScript', 'React', 'Nextjs','TailwindCSS','Rust'],
+        previewLink: true,
+        url: "https://starkcade.vercel.app/",
+        urlGithub: "https://github.com/Chonete-Builders/Starkcade",
+        urlGithub2: "",
     },
 
     {
-        img: "/travelwise.jpeg",
+        img: "/travelwise.jpg",
         title: "TravelWise",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque pretium feugiat augue sed aliquet. Nam at scelerisque lacus. In et aliquam dolor. Vivamus et est sit amet leo pharetra hendrerit. Mauris a varius erat. Phasellus tristique egestas diam eu tincidunt. Pellentesque molestie, lorem eu aliquam volutpat, risus ante porttitor libero, ac blandit metus nisl et metus",
-        icons: [
-            "NextIcon",
-            "TailwindIcon",
-            "ReactIcon"
-          ],
+        description: "TravelWise is an AI-powered assistant designed to make your travel experiences seamless and enjoyable. For the moment only focused on Costa Rica",
+        stack: ['TypeScript', 'React', 'Nextjs','Python', ],
         previewLink: true,
-        url: "https://convertidor-criptomonedas2022.netlify.app",
-        urlGithub: "https://github.com/JoelVR17/Conversor-de-Criptomonedas",
-        urlGithub: "",
-      },
+        url: "https://travel-wise-one.vercel.app/",
+        urlGithub: "https://github.com/Chonete-Builders/TravelWise",
+        urlGithub2: "",
+    },
 
-       
-  ];
-  
+    {
+        img: "/valudfoods.jpg",
+        title: "Valud Foods",
+        description: "E-commerce web platform for Valud Food, a Costa Rican company, enabling seamless online ordering and customer engagement.",
+        stack: ['Wordpress'],
+        previewLink: true,
+        url: "https://valudfoods.com/",
+        urlGithub: "",
+        urlGithub2: "",
+    },
+
+
+];
