@@ -9,7 +9,7 @@ import { About } from "./About";
 
 export const Hero = () => {
   return (
-    <div className=" w-full max-w-[50vw] mx-auto" id="home">
+    <div className=" w-full md:max-w-[60vw] lg:max-w-[60vw] mx-auto" id="home">
       <div className="flex flex-col md:flex-row items-center md:items-center md:justify-center gap-8">
         <div>
           <span>

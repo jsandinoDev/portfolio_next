@@ -62,8 +62,8 @@ const ProjectCard = ({
             )}
           </div>
 
-          <div className="mt-2 text-xl text-gray-700 dark:text-gray-100 font-normal">
-            {description}
+          <div className="mt-2 text-xl text-gray-700 dark:text-gray-100 font-normal w-full text-center sm:text-left">
+          {description}
           </div>
           <footer className="flex items-end justify-start mt-4 gap-x-4">
             {urlGithub && (

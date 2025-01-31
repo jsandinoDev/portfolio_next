@@ -3,7 +3,7 @@ export const PROJECTS = [
         img: "/starkcade.jpg",
         title: "Starkcade",
         description: "An interactive and decentralized Arcade built on the Starknet. Currently working on a decentralized CoinFlip game on the Starknet blockchain. The game allows users to bet on the outcome of a coin flip, with the results being determined by a smart contract deployed on Starknet.",
-        stack: ['TypeScript', 'React', 'Nextjs','TailwindCSS','Rust'],
+        stack: ['React', 'Nextjs','TailwindCSS','Rust'],
         previewLink: true,
         url: "https://starkcade.vercel.app/",
         urlGithub: "https://github.com/Chonete-Builders/Starkcade",
