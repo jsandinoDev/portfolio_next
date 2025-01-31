@@ -6,6 +6,7 @@ import { MailIcon } from "./icons/MailIcon";
 import { Projects } from "./Projects";
 import Image from "next/image";
 import { About } from "./About";
+import { CVIcon } from "./icons/CVIcon";
 
 export const Hero = () => {
   return (
@@ -37,17 +38,21 @@ export const Hero = () => {
           </h2>
 
           <nav className="flex gap-4 mt-8 flex-wrap">
-            <IconButton href="#">
+            <IconButton href="https://github.com/jsandinoDev">
               <GithubIcon />
               Github
             </IconButton>
-            <IconButton href="#">
+            <IconButton href="https://www.linkedin.com/in/jsandino/">
               <LinkedInIcon />
               LinkedIn
             </IconButton>
-            <IconButton href="#">
+            <IconButton href="mailto:josue.271168@gmail.com">
               <MailIcon />
               Email
+            </IconButton>
+            <IconButton href="/jsandino_resume_2025.pdf">
+              <CVIcon />
+              Download resume
             </IconButton>
           </nav>
         </div>
