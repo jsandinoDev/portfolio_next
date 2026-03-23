@@ -85,7 +85,7 @@ const icons: { [key in DevBadgeIcon]: IconType } = {
   bash: SI.SiTermius,
   bootstrap: SI.SiBootstrap,
   cloudflare: SI.SiCloudflare,
-  css: SI.SiCss3,
+  css: SI.SiCss,
   debian: SI.SiDebian,
   electron: SI.SiElectron,
   express: SI.SiExpress,
@@ -221,7 +221,7 @@ export function DevBadge({ icon, size, children }: DevBadgeProps) {
   const label = children || "";
   const iconID =
     icon || (label.toLowerCase().replace(/ /g, "-") as DevBadgeIcon);
-  const Icon = icons[iconID];
+  const Icon = icons[iconID] as React.ElementType | undefined;
   const className = `${styles["badge-" + (size || "lg")]} flex border bg-white/5 border-white/10 `;
   const color = colors[iconID];
 
